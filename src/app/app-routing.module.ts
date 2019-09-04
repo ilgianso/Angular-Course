@@ -8,6 +8,19 @@ const routes: Routes = [
     redirectTo: 'dashboard',
     pathMatch: 'full',
   },
+  // {
+  //   path: '',
+  //   component: DefaultLayoutComponent,
+  //   data: {
+  //     title: 'Home'
+  //   },
+  //   children: [
+  //     {
+  //       path: 'dashboard',
+  //       loadChildren: () => import('./views/dashboard/dashboard.module').then(m => m.DashboardModule)
+  //     },
+  //   ]
+  // },
   {
     path: '',
     component: DefaultLayoutComponent,
@@ -16,8 +29,8 @@ const routes: Routes = [
     },
     children: [
       {
-        path: 'dashboard',
-        loadChildren: () => import('./views/dashboard/dashboard.module').then(m => m.DashboardModule)
+        path: 'user',
+        loadChildren: () => import('./views/user/user.module').then(m => m.UserModule)
       },
     ]
   },

@@ -36,7 +36,7 @@ export const navItems: NavData[] = [
     },
     {
       name: 'ES1',
-      url: '/exercises/es1',
+      url: '/user',
       icon: 'fas fa-running'
     },
     {
