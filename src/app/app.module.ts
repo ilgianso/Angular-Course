@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { DefaultLayoutComponent } from './containers/default-layout/default-layout.component';
 import { UserModule } from './views/user/user.module'
 
+import { HttpClientModule } from '@angular/common/http';
+
 import {
   AppHeaderModule,
   AppFooterModule,
@@ -39,7 +41,8 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     AppBreadcrumbModule.forRoot(),
     PerfectScrollbarModule,
     BsDropdownModule.forRoot(),
-    UserModule
+    UserModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
